@@ -1,0 +1,22 @@
+{
+	"customerName": "Emre Alper",
+	"deliveryAddress":"Oosterdoksstraat 80, 1011 DK Amsterdam, Netherlands",
+	"restaurantName": "Quick China",
+	"orderNote": "please don't ring the doorbell baby is sleeping",
+	"paymentType":"Credit Card",
+	"orderProducts":[
+
+		{
+			"productName":"Philadelphia Roll Menu (16 Pieces)",
+			"quantity":1
+		},
+		{
+			"productName":"California Roll Half Menu (8 Pieces)",
+			"quantity":1
+		}
+	]
+	
+		
+	
+	
+}
