@@ -7,18 +7,22 @@
 	"restaurantId":66789, 
 	"restaurantName": "Quick China",
 	"orderNote": "please don't ring the doorbell baby is sleeping",
-	"paymentType":2,
+	"paymentMethodType":2,
 	"orderProducts":[
 
 		{
 			"productId":784567,
 			"productName":"Philadelphia Roll Menu (16 Pieces)",
-			"quantity":1
+			"quantity":1,
+			"unitCost":17.5,
+			"currencyType":1
 		},
 		{
 			"productId":784589,
 			"productName":"California Roll Half Menu (8 Pieces)",
-			"quantity":1
+			"quantity":1,
+			"unitCost":8.25,
+			"currencyType":1
 		}
 	]
 	
