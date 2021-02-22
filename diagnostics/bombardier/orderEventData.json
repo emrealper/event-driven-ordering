@@ -1,6 +1,8 @@
 {
 	"customerId":322332, 
-	"customerName": "Emre Alper",
+	"customerName": "Emre",
+	"customerLastName":"Alper",
+	"customerEmail":"emrealper@gmail.com",
 	"deliveryAddress":"Oosterdoksstraat 80, 1011 DK Amsterdam, Netherlands",
 	"restaurantId":66789, 
 	"restaurantName": "Quick China",
