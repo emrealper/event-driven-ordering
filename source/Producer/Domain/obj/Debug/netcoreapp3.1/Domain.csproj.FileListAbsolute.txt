@@ -1,0 +1,8 @@
+D:\Projects\event-driven-sushi\source\Producer\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+D:\Projects\event-driven-sushi\source\Producer\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\Projects\event-driven-sushi\source\Producer\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache

@@ -9,7 +9,7 @@ ENV GOBIN /gopath/bin
 ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 
 #Add test event data
-COPY event.json .
+COPY orderEventData.json .
 
 # Install dependencies for building httpdiff 
 RUN apk --no-cache update && apk --no-cache upgrade && \

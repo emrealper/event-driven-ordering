@@ -1,0 +1,11 @@
+D:\Projects\event-driven-sushi\source\Producer\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\Projects\event-driven-sushi\source\Producer\Application\bin\Debug\netcoreapp3.1\Application.dll
+D:\Projects\event-driven-sushi\source\Producer\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+D:\Projects\event-driven-sushi\source\Producer\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\Projects\event-driven-sushi\source\Producer\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\Projects\event-driven-sushi\source\Producer\Application\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Projects\event-driven-sushi\source\Producer\Application\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Projects\event-driven-sushi\source\Producer\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Projects\event-driven-sushi\source\Producer\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\Projects\event-driven-sushi\source\Producer\Application\obj\Debug\netcoreapp3.1\Application.dll
+D:\Projects\event-driven-sushi\source\Producer\Application\obj\Debug\netcoreapp3.1\Application.pdb
