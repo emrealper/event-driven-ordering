@@ -3,7 +3,7 @@
     "EmailAndNotificationService": {
       "commandName": "Project",
       "environmentVariables": {
-        "DOTNET_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIROMENT ": "Development"
       }
     }
   }

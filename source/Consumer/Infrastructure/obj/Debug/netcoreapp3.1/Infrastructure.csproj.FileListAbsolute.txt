@@ -1,0 +1,11 @@
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\bin\Debug\netcoreapp3.1\Application.dll
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+D:\Projects\event-driven-sushi\source\Consumer\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb

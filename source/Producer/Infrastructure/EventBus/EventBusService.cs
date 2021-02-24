@@ -12,7 +12,7 @@ namespace Infrastructure.EventBus
     public class EventBusService : IEventBusService
     {
 
-        private readonly IConfiguration _config;
+    
         private ProducerConfig _producerConfig;
         private static readonly Random rand = new Random();
         public EventBusService(IConfiguration config)
@@ -38,11 +38,6 @@ namespace Infrastructure.EventBus
             using (var producer = new ProducerBuilder<string, string>(this._producerConfig).Build())
             {
                 await producer.ProduceAsync(topicName, new Message<string, string> { Key = rand.Next(5).ToString(), Value = message });
-
-                // block until all in-flight produce requests have completed (successfully
-                // or otherwise) or 10s has elapsed.
-                producer.Flush(TimeSpan.FromSeconds(10));
-
 
             }
             return;
