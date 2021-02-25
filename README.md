@@ -12,3 +12,7 @@ and methods and tools to make load testing and monitoring memory and cpu consump
 * Bombardier
 * dotnet-counters
 
+### Architecture:
+
+![architecture](https://github.com/emrealper/event-driven-sushi/blob/main/media/Architecture.png)
+
