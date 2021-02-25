@@ -1,5 +1,5 @@
 # <img src="https://icons-for-free.com/iconfiles/png/512/sushi-1320568027512378083.png" width="30" height="30"> event-driven-sushi<img src="https://cdn0.iconfinder.com/data/icons/linkedin-ui-colored/48/JD-13-512.png" height="30" width="30"><img src="https://icon-library.com/images/delivery-icon-png/delivery-icon-png-29.jpg" width="30"> - Food Delivery Microservices Application
-This repo contains a sample application simulates the food delivery journey between ordering and sending notification after successfull transaction. The primary goal of this sample is to explain following software-architecture concepts and container-technologies like:  
+ The primary goal of this sample is to explain following software-architecture concepts and container-technologies like:  
 * Microservices  
 * CQRS  
 * Event Sourcing (Using Kafka)
@@ -17,4 +17,8 @@ and methods and tools to make load testing and monitoring memory and cpu consump
 ![architecture](https://github.com/emrealper/event-driven-sushi/blob/main/media/Architecture.png)
 
 ## Description:
+This repo contains a sample application simulates a food delivery journey between ordering and notification operations after successfull transaction. The system consists of the following parts.
+
+* **Producer/Order Api** - An API which accepts post request to make transactional operation of an order (Assuming a new order and/or payment operation has been successfully executed) Then it sends an OrderPaid event message to the event bus. 
+* **Consumer/Email and Notification Service ** - An Hosted Service (.Net Core Worker Service) which subscribes the Kafka Topic (orderPaid) and sends notification/email about the operation.
 
