@@ -22,3 +22,14 @@ This repo contains a sample application simulates a food delivery journey betwee
 * **Producer/Order Api** - An API which accepts post request to make transactional operation of an order (Assuming a new order and/or payment operation has been successfully executed) Then it sends an OrderPaid event message to the event bus. 
 * **Consumer/Email and Notification Service** - An Hosted Service (.Net Core Worker Service) which subscribes the Kafka Topic (orderPaid) and sends notification/email about the operation.
 
+## How to set up and run the project
+You can run the bellow command from the **/source/Producer/** directory to build docker images for  `Producer/Order Api` 
+```powershell
+docker build -f "Dockerfile" -t orderproducer_image ..
+```
+
+and the below command from the **/source/Consumer/**  for `Consumer/Email and Notification Service` 
+
+```powershell
+docker build -f "Dockerfile" -t orderconsumer_image ..
+```
