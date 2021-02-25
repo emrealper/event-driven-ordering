@@ -11,6 +11,7 @@ ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
 #Add test event data
 COPY orderEventData.json .
 
+
 # Install dependencies for building httpdiff 
 RUN apk --no-cache update && apk --no-cache upgrade && \
  apk --no-cache add ca-certificates && \
