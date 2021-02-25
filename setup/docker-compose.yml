@@ -33,6 +33,7 @@ services:
  orderproducer:
     image: orderproducer_image
     hostname: "orderproducer"
+    container_name: orderproducer
     depends_on:
       - broker
     ports:
@@ -45,3 +46,19 @@ services:
             reservations:
               cpus: '2.0'
               memory: 512M  
+  
+ orderconsumer:
+    image: orderconsumer_image
+    hostname: "orderconsumer"
+    container_name: orderconsumer
+    depends_on:
+      - broker
+    deploy:
+        resources:
+            limits:
+              cpus: '2.0'
+              memory: 512M
+            reservations:
+              cpus: '2.0'
+              memory: 512M  
+          

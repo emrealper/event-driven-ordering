@@ -1,11 +1,10 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app
 
-COPY ["Order.Api/Order.Api.csproj", "Order.Api/"]
+COPY ["EmailAndNotificationService/EmailAndNotificationService.csproj", "EmailAndNotificationService/"]
 COPY ["Application/Application.csproj", "Application/"]
-COPY ["Domain/Domain.csproj", "Domain/"]
 COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
-RUN dotnet restore "Order.Api/Order.Api.csproj"
+RUN dotnet restore "EmailAndNotificationService/EmailAndNotificationService.csproj"
 
 COPY . ./
 RUN dotnet publish -c Release -o out
@@ -19,3 +18,8 @@ ENV PATH="/root/.dotnet/tools:${PATH}"
 RUN dotnet tool install -g dotnet-counters
 
 ENTRYPOINT ["dotnet", "EmailAndNotificationService.dll"]
+
+
+
+
+

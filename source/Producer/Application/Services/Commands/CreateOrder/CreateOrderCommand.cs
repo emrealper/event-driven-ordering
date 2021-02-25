@@ -7,7 +7,7 @@ using MediatR;
 
 namespace Application.Services.Commands.CreateOrder
 {
-   public class CreateOrderCommand : IRequest<Guid>
+   public class CreateOrderCommand : IRequest
     {
 
         [DataMember]

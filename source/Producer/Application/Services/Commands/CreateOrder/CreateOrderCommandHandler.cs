@@ -8,7 +8,7 @@ using MediatR;
 
 namespace Application.Services.Commands.CreateOrder
 {
-    public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, Guid>
+    public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand>
     {
    
         private readonly IMediator _mediator;
@@ -20,7 +20,7 @@ namespace Application.Services.Commands.CreateOrder
 
         }
 
-        public async Task<Guid> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
         {
 
             var customer = new Customer(request.CustomerId, 
@@ -61,10 +61,10 @@ namespace Application.Services.Commands.CreateOrder
 
             }, cancellationToken);
 
-            return order.Id;
+            return Unit.Value;
 
 
-       
+
         }
     }
 }
