@@ -1,6 +1,5 @@
 D:\Projects\event-driven-sushi\source\Consumer\Application\bin\Debug\netcoreapp3.1\Application.deps.json
 D:\Projects\event-driven-sushi\source\Consumer\Application\bin\Debug\netcoreapp3.1\Application.dll
-D:\Projects\event-driven-sushi\source\Consumer\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
 D:\Projects\event-driven-sushi\source\Consumer\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
 D:\Projects\event-driven-sushi\source\Consumer\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
 D:\Projects\event-driven-sushi\source\Consumer\Application\bin\Debug\netcoreapp3.1\Application.pdb
