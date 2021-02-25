@@ -52,6 +52,8 @@ namespace Infrastructure.EventBus
             _mediator = mediator;
 
 
+
+
             //defined retry policy in case of failing
             _retryPolicy = Policy
              .Handle<Exception>()
