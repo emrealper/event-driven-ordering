@@ -1,1 +1,1 @@
-# "event-driven-sushi" Food Delivery Microservice Application
+# "event-driven-sushi" Food Delivery Microservices Application
