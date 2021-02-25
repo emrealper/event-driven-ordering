@@ -20,5 +20,5 @@ and methods and tools to make load testing and monitoring memory and cpu consump
 This repo contains a sample application simulates a food delivery journey between ordering and notification operations after successfull transaction. The system consists of the following parts.
 
 * **Producer/Order Api** - An API which accepts post request to make transactional operation of an order (Assuming a new order and/or payment operation has been successfully executed) Then it sends an OrderPaid event message to the event bus. 
-* **Consumer/Email and Notification Service ** - An Hosted Service (.Net Core Worker Service) which subscribes the Kafka Topic (orderPaid) and sends notification/email about the operation.
+* **Consumer/Email and Notification Service** - An Hosted Service (.Net Core Worker Service) which subscribes the Kafka Topic (orderPaid) and sends notification/email about the operation.
 
