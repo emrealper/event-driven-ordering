@@ -1,1 +1,1 @@
-# ![](https://icons-for-free.com/iconfiles/png/512/sushi-1320568027512378083.png | width=100 ) "event-driven-sushi" Food Delivery Microservices Application
+# ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100) "event-driven-sushi" Food Delivery Microservices Application
