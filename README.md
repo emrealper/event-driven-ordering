@@ -34,7 +34,7 @@ and the below command from the **/source/Consumer/**  for `Consumer/Email and No
 docker build -f "Dockerfile" -t orderconsumer_image ..
 ```
 
-after building docker images of two application you can run the below command from the **/setup/** directory to up and run both 2 services and service bus enviroment. (Kafka and Zookeeper)
+after building docker images of two application you can run the below command from the **/setup/** directory to run both 2 services and service bus enviroment. (Kafka and Zookeeper)
 
 ```powershell
 docker-compose up
