@@ -5,4 +5,3 @@ D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Do
 D:\Projects\event-driven-sushi\source\Producer\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
 D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
-D:\Projects\event-driven-sushi\source\Producer\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache

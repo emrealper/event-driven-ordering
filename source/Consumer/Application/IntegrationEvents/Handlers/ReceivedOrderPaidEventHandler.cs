@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.IntegrationEvents.Handlers
 {
-    public class ReceivedOrderPaidEventHandler : IRequestHandler<ReceivedOrderPaidEvent,bool>
+    public class ReceivedOrderPaidEventHandler : IRequestHandler<ReceivedOrderPaidEvent>
     {
 
         private readonly INotificationService _notification;
@@ -23,12 +23,12 @@ namespace Application.IntegrationEvents.Handlers
 
 
 
-        public async Task<bool> Handle(ReceivedOrderPaidEvent request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(ReceivedOrderPaidEvent request, CancellationToken cancellationToken)
         {
 
             await _notification.SendEmailAsync(new MessageDto());
 
-            return true;
+            return Unit.Value;
 
 
         }

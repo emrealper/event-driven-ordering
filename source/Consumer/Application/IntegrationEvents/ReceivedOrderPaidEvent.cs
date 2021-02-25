@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Application.IntegrationEvents
 {
-    public class ReceivedOrderPaidEvent : IRequest<bool>
+    public class ReceivedOrderPaidEvent : IRequest
     {
 
         public Guid OrderId { get; set; }

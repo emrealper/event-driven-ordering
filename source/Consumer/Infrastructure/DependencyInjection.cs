@@ -1,5 +1,7 @@
 ﻿using Application.IEventBusService;
+using Application.IntegrationEvents;
 using Application.Interfaces;
+using Infrastructure.DataHelpers;
 using Infrastructure.EventBus;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,9 +16,12 @@ namespace Application
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
+
+
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddSingleton<IConsumerService, ConsumerService>();
             services.AddSingleton<IProducerService, ProducerService>();
+            services.AddTransient<IDeserializeKafkaMessage<ReceivedOrderPaidEvent>>(s => new DeserializeKafkaMessage<ReceivedOrderPaidEvent>());
             return services;
         }
 

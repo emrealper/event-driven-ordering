@@ -26,8 +26,10 @@ namespace Infrastructure.EventBus
         private AsyncRetryPolicy _retryPolicy;
         private readonly IProducerService _producureService;
 
+        private readonly IDeserializeKafkaMessage<ReceivedOrderPaidEvent> _deserializeKafkaMessage;
 
-        public ConsumerService(IConfiguration config, IMediator mediator, IProducerService producureService)
+        public ConsumerService(IConfiguration config, IMediator mediator, IProducerService producureService,
+                IDeserializeKafkaMessage<ReceivedOrderPaidEvent> deserializeKafkaMessage)
         {
 
 
@@ -36,7 +38,7 @@ namespace Infrastructure.EventBus
             var groupId = config.GetSection("KafkaConfiguration:GroupId").Value;
 
 
-
+            _deserializeKafkaMessage = deserializeKafkaMessage;
             _producureService = producureService;
 
             _topic = config.GetSection("KafkaConfiguration:Topic").Value;
@@ -119,9 +121,9 @@ namespace Infrastructure.EventBus
             {
                 
                 //Deserialize kafka message 
-                var receivedEvent = JsonConvert.DeserializeObject<ReceivedOrderPaidEvent>(consumeResult.Message.Value);
+                var receivedEvent = _deserializeKafkaMessage.Deserialize(consumeResult.Message.Value);
                 //send notification email using retry policy. After 2 attempt send it dead letter queue
-                await _retryPolicy.ExecuteAsync<bool>(async () => await _mediator.Send(receivedEvent));
+                await _retryPolicy.ExecuteAsync<Unit>(async () => await _mediator.Send(receivedEvent));
                 return true;
             }
             catch(Exception)
