@@ -52,7 +52,15 @@ docker build -t alpine/bombardier .
 To monitor our applications memory consumption and cpu usage i use `dot-net-counters` which was introduced with [.NET CORE 3.0](https://devblogs.microsoft.com/dotnet/introducing-diagnostics-improvements-in-net-core-3-0/)
 
 You can run the bellow commands using command prompt to monitor diagnostics of `Producer/Order API` and `Consumer/Email and Notification Service` 
->**PLEASE** change your command prompt font size to 12 for better readibilty.
+>**PLEASE** change your command prompt font-size to 12 for better readibilty.
+
+```cpp
+docker exec -it orderproducer dotnet counters monitor -p 1 System.Runtime Microsoft.AspNetCore.Hosting
+```
+
+```cpp
+docker exec -it orderconsumer dotnet counters monitor -p 1 System.Runtime
+```
 
 
 
