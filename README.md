@@ -41,4 +41,12 @@ docker-compose up
 ```
 ## Load testing and performance monitoring
 
+To test the application i use `bombardier` which is written in Go programming language to simulate many HTTP(S) request concurently sent from different clients.
+
+You can run the bellow command from the **/diagnostics/bombardier/** directory to build docker images for  `bombardier` 
+
+```powershell
+docker build -t alpine/bombardier .
+```
+
 
