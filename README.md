@@ -23,12 +23,12 @@ This repo contains a sample application simulates a food delivery journey betwee
 * **Consumer/Email and Notification Service** - An Hosted Service (.Net Core Worker Service) which subscribes the Kafka Topic (orderPaid) and sends notification/email about the operation.
 
 ## How to set up and run the project
-You can run the bellow command from the **/source/Producer/** directory to build docker images for  `Producer/Order API` 
+You can run the bellow command from the **/source/Producer/Order.Api/** directory to build docker images for  `Producer/Order API` 
 ```powershell
 docker build -f "Dockerfile" -t orderproducer_image ..
 ```
 
-and the below command from the **/source/Consumer/**  for `Consumer/Email and Notification Service` 
+and the below command from the **/source/Consumer/EmailAndNotificationService/**  for `Consumer/Email and Notification Service` 
 
 ```powershell
 docker build -f "Dockerfile" -t orderconsumer_image ..
