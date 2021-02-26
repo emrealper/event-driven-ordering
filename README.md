@@ -66,7 +66,7 @@ In the image below, you can see the CPU utilization and memory consuptions of ou
 ![initial-diagnostics](https://github.com/emrealper/event-driven-sushi/blob/main/media/Diagnostics-1.png)
 
 
-## Let's load testing using `bombardier` 
+## Let's make load testing using `bombardier` 
 ![machine-gun](https://i.imgur.com/2u6JJnh.gif)
 
 You can run the below command using powershell or command prompt to make concurent http call to  `Producer/Order API`. It simulates 50 http call per second from 50 different client during 100 seconds.
