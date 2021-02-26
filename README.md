@@ -135,7 +135,7 @@ In the image below, you can monitor real-time diagnostics to detect `memory leak
 ![consume-result](https://github.com/emrealper/event-driven-sushi/blob/main/media/consumer.jpg)
 
 ## Read further and references
-
+- [Confluent Schema Registry](https://docs.confluent.io/platform/current/schema-registry/index.html)
 - [Using Akka between rest and Kafka](https://deezer.io/akka-as-a-bridge-between-rest-and-kafka-acfe6194c202)
 - [Performance Testing Techniques](https://www.youtube.com/watch?v=jn54CjePzs0&list=PLbs2hWUWXfExaGUHCyQoOUXZVjds1zHWR&index=13&t=618s)
 
