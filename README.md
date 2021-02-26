@@ -49,4 +49,6 @@ You can run the bellow command from the **/diagnostics/bombardier/** directory t
 docker build -t alpine/bombardier .
 ```
 
+To monitor our application memory consumption and cpu usage i use `dot-net-counters` which was introduced with [.NET CORE 3.0](https://devblogs.microsoft.com/dotnet/introducing-diagnostics-improvements-in-net-core-3-0/)
+
 
