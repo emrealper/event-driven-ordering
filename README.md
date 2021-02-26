@@ -122,7 +122,7 @@ Statistics        Avg      Stdev        Max
      90%   707.76ms
      99%      1.20s
   HTTP codes:
-    1xx - 0, 2xx - 3993, 3xx - 0, 4xx - 0, 5xx - 0
+    1xx - 0, 2xx - 5001, 3xx - 0, 4xx - 0, 5xx - 0
     others - 0
   Throughput:   36.01KB/s
 ```
