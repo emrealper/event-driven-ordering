@@ -61,6 +61,9 @@ docker exec -it orderproducer dotnet counters monitor -p 1 System.Runtime Micros
 ```cpp
 docker exec -it orderconsumer dotnet counters monitor -p 1 System.Runtime
 ```
+In the image below, we can see the CPU utilization and memory consuptions of our applications without any requests and load.
+
+![initial-diagnostics](https://github.com/emrealper/event-driven-sushi/blob/main/media/Diasgnostics-1.png)
 
 
 
