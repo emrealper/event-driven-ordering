@@ -43,7 +43,7 @@ docker-compose up
 
 To test the application i use `bombardier` which is written in Go programming language to simulate many HTTP(S) request concurently sent from different clients.
 
-You can run the bellow command from the **/diagnostics/bombardier/** directory to build docker images for  `bombardier` 
+You can run the below command from the **/diagnostics/bombardier/** directory to build docker images for  `bombardier` 
 
 ```powershell
 docker build -t alpine/bombardier .
@@ -51,7 +51,7 @@ docker build -t alpine/bombardier .
 
 To monitor our applications memory consumption and cpu usage i use `dot-net-counters` which was introduced with [.NET CORE 3.0](https://devblogs.microsoft.com/dotnet/introducing-diagnostics-improvements-in-net-core-3-0/)
 
-You can run the bellow commands using command prompt to monitor diagnostics of `Producer/Order API` and `Consumer/Email and Notification Service` 
+You can run the below commands using command prompt to monitor diagnostics of `Producer/Order API` and `Consumer/Email and Notification Service` 
 >**PLEASE** change your command prompt font-size to 12 for better readibilty.
 
 ```cpp
@@ -68,5 +68,27 @@ In the image below, we can see the CPU utilization and memory consuptions of our
 
 ## Let's load testing using `bombardier` 
 ![machine-gun](https://i.imgur.com/2u6JJnh.gif)
+
+You can run the below command using powershell or command prompt to make concurent http call to  `Producer/Order API`. It simulates 50 http call per second from 50 different client during 100 seconds.
+
+```powershell
+docker run -ti --rm alpine/bombardier -c 50 -d 100s --rate 50 -m POST "http://host.docker.internal:5000/api/Order" -H "Content-Type: application/json" -f "orderEventData.json"
+Bombarding http://host.docker.internal:5000/api/Order for 1m40S using 50 connection(s)
+[=======================================================================================================================================================================================================================================] 1m40sDone!
+Done!
+Statistics        Avg      Stdev        Max
+  Reqs/sec       48.32     453.54     26595.33
+  Latency      1.13s     147.09ms      1.81s
+  Latency Distribution
+     50%   613.75ms
+     75%   639.65ms
+     90%   707.76ms
+     99%      1.20s
+  HTTP codes:
+    1xx - 0, 2xx - 3993, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:   36.01KB/s
+```
+
 
 
