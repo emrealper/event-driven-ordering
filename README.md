@@ -106,6 +106,8 @@ Please see the content of HTTP `POST` request.
 
 ### Running and result
 
+Run the below command using powershell or command prompt.
+
 ```powershell
 docker run -ti --rm alpine/bombardier -c 50 -d 100s --rate 50 -m POST "http://host.docker.internal:5000/api/Order" -H "Content-Type: application/json" -f "orderEventData.json"
 Bombarding http://host.docker.internal:5000/api/Order for 1m40S using 50 connection(s)
