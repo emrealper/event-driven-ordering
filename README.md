@@ -66,4 +66,6 @@ In the image below, we can see the CPU utilization and memory consuptions of our
 ![initial-diagnostics](https://github.com/emrealper/event-driven-sushi/blob/main/media/Diagnostics-1.png)
 
 
+## Let's bomb it
+![machine-gun](https://i.imgur.com/2u6JJnh.gif)
 
