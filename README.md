@@ -132,6 +132,8 @@ In the image below, you can monitor real-time diagnostics to detect `memory leak
 
 ![real-time-diagnostics](https://github.com/emrealper/event-driven-sushi/blob/main/media/Diagnostics-Real-time.png)
 
+![consume-result](https://github.com/emrealper/event-driven-sushi/blob/main/media/consumer.jpg)
+
 ## Read further and references
 
 - [Using Akka between rest and Kafka](https://deezer.io/akka-as-a-bridge-between-rest-and-kafka-acfe6194c202)
