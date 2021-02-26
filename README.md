@@ -125,7 +125,7 @@ Statistics        Avg      Stdev        Max
   Throughput:   36.01KB/s
 ```
 
-In the image below, you can monitor resource consumption to detect memory leakage exists in real time for the `producer` and `consumer` applications. 
+On the image below, you can monitor resource consumptions to detect memory leakage or cpu usage in real time for the `producer` and `consumer` applications. 
 
 
 
