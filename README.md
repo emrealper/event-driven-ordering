@@ -61,7 +61,7 @@ docker exec -it orderproducer dotnet counters monitor -p 1 System.Runtime Micros
 ```cpp
 docker exec -it orderconsumer dotnet counters monitor -p 1 System.Runtime
 ```
-In the image below, we can see the CPU utilization and memory consuptions of our applications on waiting mode. (No request and load)
+In the image below, you can see the CPU utilization and memory consuptions of our applications on waiting mode. (No request and load)
 
 ![initial-diagnostics](https://github.com/emrealper/event-driven-sushi/blob/main/media/Diagnostics-1.png)
 
@@ -124,6 +124,8 @@ Statistics        Avg      Stdev        Max
     others - 0
   Throughput:   36.01KB/s
 ```
+
+In the image below, you can monitor resource consumption to detect memory leakage exists in real time for the `producer` and `consumer` applications. 
 
 
 
