@@ -71,6 +71,41 @@ In the image below, we can see the CPU utilization and memory consuptions of our
 
 You can run the below command using powershell or command prompt to make concurent http call to  `Producer/Order API`. It simulates 50 http call per second from 50 different client during 100 seconds.
 
+Please see the content of HTTP `POST` request.
+
+``` JSON
+{
+	"customerId":322332, 
+	"customerName": "Emre",
+	"customerLastName":"Alper",
+	"customerEmail":"emrealper@gmail.com",
+	"deliveryAddress":"Oosterdoksstraat 80, 1011 DK Amsterdam, Netherlands",
+	"restaurantId":66789, 
+	"restaurantName": "Quick China",
+	"orderNote": "please don't ring the doorbell baby is sleeping",
+	"paymentMethodType":2,
+	"orderProducts":[
+
+		{
+			"productId":784567,
+			"productName":"Philadelphia Roll Menu (16 Pieces)",
+			"quantity":1,
+			"unitCost":17.5,
+			"currencyType":1
+		},
+		{
+			"productId":784589,
+			"productName":"California Roll Half Menu (8 Pieces)",
+			"quantity":1,
+			"unitCost":8.25,
+			"currencyType":1
+		}
+	]
+}
+```
+
+###Running
+
 ```powershell
 docker run -ti --rm alpine/bombardier -c 50 -d 100s --rate 50 -m POST "http://host.docker.internal:5000/api/Order" -H "Content-Type: application/json" -f "orderEventData.json"
 Bombarding http://host.docker.internal:5000/api/Order for 1m40S using 50 connection(s)
