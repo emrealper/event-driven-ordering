@@ -125,7 +125,8 @@ Statistics        Avg      Stdev        Max
   Throughput:   36.01KB/s
 ```
 
-On the image below, you can monitor resource consumptions to detect memory leakage or cpu usage in real time for the `producer` and `consumer` applications. 
+In the image below, you can monitor real-time diagnostics to detect `memory leakage` or `cpu usage` of the `producer` and `consumer` applications. 
 
 
+![real-time-diagnostics](https://github.com/emrealper/event-driven-sushi/blob/main/media/Diagnostics-Real-time.png)
 
