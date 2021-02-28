@@ -69,7 +69,7 @@ In the image below, you can see the CPU utilization and memory consuptions of ou
 ## Let's make load testing using `bombardier` 
 ![machine-gun](https://i.imgur.com/2u6JJnh.gif)
 
-You can run the below command using powershell or command prompt to make concurent http call to  `Producer/Order API`. It simulates 50 http calls per second from 50 different client during 100 seconds.
+You can run the below command using powershell or command prompt to make concurent http call to  `Producer/Order API`. It simulates 50 http calls per second from 50 different clients during 100 seconds.
 
 ### Running and result
 
