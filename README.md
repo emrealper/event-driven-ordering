@@ -103,7 +103,7 @@ Please see the content of HTTP `POST` request.
 	"customerName": "Emre",
 	"customerLastName":"Alper",
 	"customerEmail":"emrealper@gmail.com",
-	"deliveryAddress":"Oosterdoksstraat 80, 1011 DK Amsterdam, Netherlands",
+	"deliveryAddress":"55 Water Street 28th Floor New York, NY 10041 USA",
 	"restaurantId":66789, 
 	"restaurantName": "Quick China",
 	"orderNote": "please don't ring the doorbell baby is sleeping",
